@@ -112,6 +112,19 @@
     wholeNumber(intInput);
   });
 
+
+  // ***** Area of a circle exercise *****
+  function areaNumber(num) {
+    var area = (num * num * Math.PI);
+    document.getElementById('solution').innerHTML = "The area of circle with radius " + num + " is " + area;
+  }
+
+  var areaBtn = document.getElementById('area-button');
+  areaBtn.addEventListener('click', function() {
+    var areaInput = document.getElementById('area-input').value;
+    areaNumber(areaInput);
+  });
+
 </script>
 </body>
 </html>
