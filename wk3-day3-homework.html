@@ -74,7 +74,7 @@
 
   /* WRITE YOUR HOMEWORK SCRIPTS BELOW HERE */
   
-  // Half this number function
+  // ***** Half this number exercise *****
   function halfNumber(num) {
     var halvedNum = num / 2;
     document.getElementById("solution").innerHTML = "Half of " + num + " is " + halvedNum;  
@@ -86,7 +86,19 @@
     halfNumber(num);
   });
 
-  
+  // ***** Fraction/Whole exercise ***** 
+  function percentNumber(fracNum, wholeNum) {
+    var percentNum = (fracNum/wholeNum) * 100;
+    document.getElementById("solution").innerHTML = fracNum + " is " + percentNum + "% of " + wholeNum;
+  }
+
+  var percentBtn = document.getElementById("percent-button");
+  percentBtn.addEventListener('click', function(){
+    var fracInput = document.getElementById('percent1-input').value;
+    var wholeInput = document.getElementById('percent2-input').value;
+    
+    percentNumber(fracInput, wholeInput);
+  });
 
 </script>
 </body>
