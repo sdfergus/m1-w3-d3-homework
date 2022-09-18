@@ -100,6 +100,18 @@
     percentNumber(fracInput, wholeInput);
   });
 
+  // ***** Nearest whole number exercise *****
+  function wholeNumber(num) {
+    var roundedNum = Math.round(num);
+    document.getElementById('solution').innerHTML = "The nearest whole number of " + num + " is " + roundedNum;
+  }
+
+  var intButton = document.getElementById('int-button');
+  intButton.addEventListener('click', function(){
+    var intInput = document.getElementById('int-input').value;
+    wholeNumber(intInput);
+  });
+
 </script>
 </body>
 </html>
